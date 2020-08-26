@@ -1,5 +1,3 @@
-import { getDinos } from '../helpers/data/dinoData.js';
-
 const distributeDinos = (array) => {
 	let healthyDinos = [];
 
@@ -7,9 +5,9 @@ const distributeDinos = (array) => {
 		if (element.health >= 50) {
 			healthyDinos.push(element);
 		}
-    });
-    
-    printDinos()
+	});
+
+	printDinos('#kennel', healthyDinos);
 };
 
 const printDinos = (id, array) => {
@@ -17,7 +15,7 @@ const printDinos = (id, array) => {
 
 	array.forEach((element) => {
 		$(id).append(
-			`<div class="card">
+			`<div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="${element.imageUrl}" alt="${element.name}">
                 <div class ="card-body">
                     <h5 class="card-title">${element.name}</h5>
@@ -28,3 +26,5 @@ const printDinos = (id, array) => {
 };
 
 const buildDinoCards = (array) => {};
+
+export { distributeDinos };
