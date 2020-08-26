@@ -4,6 +4,10 @@ footer {
 	color: white;
 }
 
-.hospital-container {
-    background-color: red;
+#hospital-container {
+	background-color: red;
+}
+
+#graveyard-container {
+	background-color: #c4c4c4;
 }
