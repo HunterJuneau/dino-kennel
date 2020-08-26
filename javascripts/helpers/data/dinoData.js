@@ -34,13 +34,13 @@ const dinos = [
 	{
 		id: 'dino4',
 		name: 'Barry',
-		type: 'Velociraptor',
+		type: 'Baryonyx',
 		age: 100,
 		owner: 'Abbey',
 		adventures: [],
 		health: 100,
 		imageUrl:
-			'https://pbs.twimg.com/profile_images/741964505429725185/1mCjU5yw_400x400.jpg',
+			'https://vignette.wikia.nocookie.net/jurassicpark/images/0/04/Jurassic_world_fallen_kingdom_baryonyx_by_sonichedgehog2-dc9dfqf.png/revision/latest?cb=20180427200439',
 	},
 	{
 		id: 'dino5',
