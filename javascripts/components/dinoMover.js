@@ -1,13 +1,17 @@
 const distributeDinos = (array) => {
 	let healthyDinos = [];
+	let sickDinos = [];
 
 	array.forEach((element) => {
 		if (element.health >= 50) {
 			healthyDinos.push(element);
+		} else if (element.health < 50 && element.health > 0) {
+			sickDinos.push(element);
 		}
 	});
 
 	printDinos('#kennel', healthyDinos);
+	printDinos('#hospital', sickDinos);
 };
 
 const printDinos = (id, array) => {

@@ -3,3 +3,7 @@ footer {
 	background-color: #333a40;
 	color: white;
 }
+
+.hospital-container {
+    background-color: red;
+}

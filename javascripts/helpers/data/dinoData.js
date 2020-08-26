@@ -34,13 +34,13 @@ const dinos = [
 	{
 		id: 'dino4',
 		name: 'Barry',
-		type: 'Brontosaurus',
+		type: 'Velociraptor',
 		age: 100,
 		owner: 'Abbey',
 		adventures: [],
 		health: 100,
 		imageUrl:
-			'https://lh3.googleusercontent.com/proxy/_rJSL88ErOEvgHl5SInWOEolOdikwIMcKWPv9iqZzt3IUkD33WdG6d9qd8TmNJFSiszTXm7JeGQPocmB_BZErKxt__25LOpW75dmnVuy0nuY0PatX2cIYA-C',
+			'https://pbs.twimg.com/profile_images/741964505429725185/1mCjU5yw_400x400.jpg',
 	},
 	{
 		id: 'dino5',
