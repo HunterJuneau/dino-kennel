@@ -25,6 +25,4 @@ const printDinos = (id, array) => {
 	});
 };
 
-const buildDinoCards = (array) => {};
-
 export { distributeDinos };
