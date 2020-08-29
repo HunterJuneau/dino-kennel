@@ -16,6 +16,7 @@ const distributeDinos = (array) => {
 	printDinos('#kennel', healthyDinos);
 	printDinos('#hospital', sickDinos);
 	printDinos('#graveyard', deadDinos);
+	newDino(healthyDinos);
 };
 
 const printDinos = (id, array) => {
@@ -45,6 +46,25 @@ const removeDino = (element, array, index, id) => {
 
 const rebuildDinos = (id, array) => {
 	printDinos(id, array);
+};
+
+const newDino = (array) => {
+	let dinoNumber = 0;
+	$('#submit-dino').on('click', () => {
+		dinoNumber += 1;
+		array.push({
+			id: `addedDino${dinoNumber}`,
+			name: $('#dino-name').val(),
+			type: $('#dino-type').val(),
+			age: $('#dino-age').val(),
+			owner: 'You!',
+			adventures: [],
+			health: 100,
+			imageUrl: $('#dino-img').val(),
+		});
+
+		rebuildDinos('#kennel', array);
+	});
 };
 
 export { distributeDinos };
