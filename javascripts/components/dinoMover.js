@@ -27,6 +27,7 @@ const printDinos = (id, array) => {
                 <img class="card-img-top" src="${element.imageUrl}" alt="${element.name}">
                 <div class ="card-body">
                     <h5 class="card-title">${element.name}</h5>
+                    <progress id="health" value="${element.health}" max="100"></progress>
                     <button type="button" class="btn btn-danger" id="${element.id}">Delete</button>
                 </div>
             </div>`
