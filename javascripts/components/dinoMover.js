@@ -32,16 +32,19 @@ const printDinos = (id, array) => {
             </div>`
 		);
 
-		removeDino(element, array, index);
+		removeDino(element, array, index, id);
 	});
 };
 
-const removeDino = (element, array, index) => {
+const removeDino = (element, array, index, id) => {
 	$(`#${element.id}`).on('click', () => {
-        array.splice(index, 1);
-        console.log(array)
-		distributeDinos(array);
+		array.splice(index, 1);
+		rebuildDinos(id, array);
 	});
+};
+
+const rebuildDinos = (id, array) => {
+	printDinos(id, array);
 };
 
 export { distributeDinos };
